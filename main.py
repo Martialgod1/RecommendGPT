@@ -79,14 +79,16 @@ if submit_button:
             "presence_penalty": 0,
             "top_p": 0.95
         }
-
+        
         headers = {
             "api-key": openai.api_key
         }
         response = requests.post(api_base, headers=headers, json=payload)
         
+        response_content = response.json()['choices'][0]['message']['content']
         ## Main section content
         st.header('ChatGPT Article Recommendations')
         st.write('Paper Title: {}'.format(paper_title))
 
-        st.write(response.json())
+        st.write(response_content)
+
