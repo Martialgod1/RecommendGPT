@@ -17,7 +17,7 @@ openai.api_version = credentials['api_version']
 chatgpt_model_name = credentials['chatgpt_model_name']
 
 ## Beging Streamlit App
-st.image(f'https://github.com/colbyford/scipapers_chatgpt/raw/master/img/logo_red.png')
+st.image(f'https://github.com/Martialgod1/RecommendGPT/blob/main/img/logo_red.png')
 
 with st.sidebar.form('input'):
 
