@@ -17,11 +17,11 @@ openai.api_version = credentials['api_version']
 chatgpt_model_name = credentials['chatgpt_model_name']
 
 ## Beging Streamlit App
-st.image(f'https://github.com/Martialgod1/RecommendGPT/blob/main/img/logo_red.png')
+st.image(f'/Users/pray/Documents/RecommendGPT/img/logo.png')
 
 with st.sidebar.form('input'):
 
-    st.markdown('# SciPapers-ChatGPT')
+    st.markdown('# RecommendGPT')
      
     paper_title = st.text_input(
         "Paper Title",
